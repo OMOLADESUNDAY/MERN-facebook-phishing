@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --background-color:#dfe3ee;
+  --btn-color:#1877f2;
+  --form-bg-color:white;
+  --error-color:red;
+}
+body{
+  background-color: var(--background-color);
+  font-family: 'roboto';
+}
+.btn{
+  padding: 14px 20px;
+  border-radius: 0.2rem;
+  background-color: var(--btn-color);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  margin: 8px 0;
+  color: #fff;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline;
+  border: 1px solid #dfe3ee;
+  border-radius: 0.2rem;
+  background-color: white;
+  outline: none;
+  
+}
+.container{
+  padding: 16px;
+}
+h1{
+  text-align: center;
+  color: rgb(21, 88, 211);
+  font-size: 44px;
+  margin-top: 40px;
+}
+section{
+  background-color: white;
+  border-radius: 0.4rem;
+  width: 30%;
+  margin-top: 10px;
+  box-shadow: 2px 3px 4px gray;
+}
+.wrap{
+  display: flex;
+  justify-content: center;
+}
+h2{
+  color: #4d4d4d;
+  font-size: 16px;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 8px 0;
+}
+.error{
+  color: red;
+  font-size: 12px;
+}
+.success{
+  color: green;
+  text-align: center;
+}
+@media screen and (max-width:780px) {
+  section{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:540px) {
+  section{
+    width: 70%;
+  }
+}

